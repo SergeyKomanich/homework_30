@@ -6,11 +6,11 @@
 """
 
 class Counter:
+    current_position = 0
 
     def __init__(self, start_value, stop_value):
         self.current_position = start_value
         self.stop_counter = stop_value
-        self.current_position = 0
 
     def increase_counter(self):
         if self.current_position < self.stop_counter:
@@ -21,7 +21,7 @@ class Counter:
         return self.current_position
 
 
-counter = Counter(0, 10)
+counter = Counter(100, 1000)
 print(counter.increase_counter())
 print(counter.increase_counter())
 print(counter.increase_counter())
